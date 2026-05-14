@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 1. This is the main theme for your app after it loads -->
+    <style name="Theme.PharmaRestock" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- 2. This is the new, dedicated theme for the splash screen -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- The background color -->
+        <item name="windowSplashScreenBackground">#000000</item>
+
+        <!-- The icon that will appear in the center (your app icon) -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+
+        <!-- The theme to transition to after the splash screen is done -->
+        <item name="postSplashScreenTheme">@style/Theme.PharmaRestock</item>
+    </style>
+</resources>
